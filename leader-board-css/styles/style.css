@@ -1,0 +1,144 @@
+
+/* Default Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto:wght@100;300;400;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #eeeeee;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    background-color: #fff;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* top players style */
+
+
+.section-title{
+    color: #562eff;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+
+.player{
+    display: flex;
+    align-items: center;
+}
+
+.player img{
+    width: 50px;
+    height: 50px;
+    margin-right: 14px;
+}
+
+.player-name{
+    font-size: 18px;
+}
+
+hr{
+    border: 1px solid #d1d1d1;
+    margin: 30px 0;
+}
+
+/* Top blog Styles */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+
+
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info{
+    margin-left: 20px;
+}
+
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#562EFF;
+}
+
+
+
+
+/* Courses Styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 30px;
+    width: 300px;
+    align-items: center;
+}
+.course{
+    padding: 10px;
+    margin: 0 10px;
+    box-shadow: 1px 1px 5px rgba(146, 139, 139, 0.2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.courses img{
+    height: 120px;
+    width: 244px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #afafaf;
+}
+
+
+/* media Query */
+
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs,
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+
+}
